@@ -1,0 +1,41 @@
+.about{
+    margin-top: 3px;
+    @media (min-width: 992px){
+        display: flex;
+    }
+
+    .avatar{
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3px;
+        //Changes position when not on phone
+        @media (min-width: 992px){
+
+            max-height: 500px;
+            margin-right: 3px;
+            margin-bottom: 3px;
+        }
+    }
+
+    .article{
+        
+        background-color: $lgrey;
+        @media (min-width: 992px){
+            margin-bottom: 3px;
+        }
+
+    
+        h3{
+            font-size: 30px ;
+            padding:15px;
+        }
+
+        p{
+            font-size: 18px;
+            padding: 15px;
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,172 @@
+@import "variables";
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+a:hover {
+    text-decoration: none;
+    color: $orange;
+  }
+// Hide Menu when Not on Phone  
+.p-menu {
+  @media(min-width: 575px){
+  display: none;
+  }
+}
+   
+  // Hamburger 
+  .hamburger {
+    height: 45px;
+    margin: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 120;
+     div {
+      background-color: rgb(61, 61, 61);
+      position: relative;
+      width: 40px;
+      height: 5px;
+      margin-top: 7px;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  //Hamburger Toggle and Animation
+  #toggle {
+    display: none;
+  }
+  
+  #toggle:checked + .hamburger .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+  
+  #toggle:checked + .hamburger .middle {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+  
+  #toggle:checked + .hamburger .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  #toggle:checked ~ .menu {
+    height: 100%;
+
+  }
+  
+
+  
+  // Phone Menu
+  .menu {
+    width: 100%;
+    background-color: $grey;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    .menu a:first-child {
+      margin-top: 40px;
+    }
+    
+    .menu a:last-child {
+      margin-bottom: 40px;
+    }
+    
+    .link {
+      width: 100%;
+      margin: 0;
+      padding: 10px 0;
+      font: 700 20px $font;
+  
+      .link:hover {
+        background-color: #fff;
+        color: rgb(61, 61, 61);
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+// Not Phone Menu
+ .nav{
+
+	align-items: center;
+  display: inline;
+	position: fixed;
+	width: 200px;
+	height: 100vh;
+	border-right: 3px solid $white;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 1;
+	background-color: $orange;
+  text-decoration: none;
+ 
+  //Hide Menu on Phone
+  @media (max-width: 576px){
+    display: none;
+  }
+    .logo {
+        width: 200px;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        line-height: 3;
+        font-family: 'Georama', sans-serif;
+        border-bottom: 3px solid $white;
+
+        .logo-link{
+            font-size: 50px ;
+            color: $white;
+            text-decoration: none;
+            margin-bottom: 0px ;
+        }
+    }
+
+    .links {
+        width: 200px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Georama', sans-serif;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        text-decoration: none;
+
+        .nav-link{
+            text-decoration: none;
+            text-align: center;
+            color: $white;
+            display: block;
+            padding-top: 60px;
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+  
+
+  
