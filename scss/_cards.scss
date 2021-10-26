@@ -10,7 +10,8 @@
         
         //Change direction when not on phone
         @media (min-width: 576px){
-            padding-left: 200px;
+            margin-left: 200px;
+            padding: 0px 10%;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: flex-start;

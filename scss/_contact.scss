@@ -5,7 +5,8 @@
     margin-top: 3px ;
 
     @media (min-width: 575px){
-        padding-left: 200px;
+        margin-left: 200px;
+		padding: 0px 10%;
     }
     .form-section{
         margin-top: 20px;
@@ -19,7 +20,13 @@
         color: $white;
 
 		.get-in-touch{
-			margin-right: 100px;
+			
+			height: auto;
+            flex-grow: 1;
+			text-align: center;
+			@media(min-width: 1175px) {
+				margin-right: 100px;
+			}
 		
 			h2{
 				font-family: 'Georama', sans-serif;
