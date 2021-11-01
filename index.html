@@ -48,7 +48,8 @@
             <a class="link" href="pages/coding.html">Coding Examples</a>
             <a class="link" href="pages/scs.html">SCS Scheme</a>
             <a class="link" href="index.html#contact-me">Contact Me</a>
-            <a class="link" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="link social" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="link social" href="#"><i class="fab fa-github"></i></a>
           </nav>
           <!-- Mobile Menu -->
       </nav>
@@ -78,7 +79,8 @@
              <a class="nav-link"href="index.html#contact-me"><strong>Contact Me</strong></a>
         </li>
          <li class="nav-item">
-             <a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="nav-link social" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="nav-link social" href="#"><i class="fab fa-github"></i></a>
         </li>
         </ul>
          
@@ -92,12 +94,25 @@
             <div class="intro">
                 <h1 class="title">My Name is Daniel Reynolds</h1>
                 <h2 class="tag">I'm a Web Developer</h2>
+                <!-- <h2 class="tag scroll"><a href="index.html#content">Scroll Down</a></h2> -->
+  
+                <!-- Scroll Link -->
+                <!-- <div class="scroll-down">
+                    <a href="index.html#content">
+                      <p id="scroll-link">Scroll<br> Down<br>
+                        <i class="fas fa-chevron-down"></i>
+                      </p>
+                    </a>
+                  </div> -->
+                <!-- /Scroll Link -->
+
+            
             </div>
         </div>
         <!-- Hero Image -->
          
     </div>
-    <div class="content">
+    <div class="content" id="content">
             <!-- Project Cards -->
         <div class="cards" id="portfolio">
             <div class="cards-wrap">
@@ -180,7 +195,7 @@
 				<form class="form">
 					<div class="fir-las">
 						<input class="first" type="text" required name="first name" placeholder=" First Name*">
-						<input type="text" required name="last name" placeholder=" Last Name*">
+						<input class="last" type="text" required name="last name" placeholder=" Last Name*">
 					</div>
 					<input type="email" required name="email address" placeholder=" Email Address*">
 					<input type="text"  name="subject" placeholder=" Subject">

@@ -160,10 +160,13 @@ a:hover {
             text-align: center;
             color: $white;
             display: block;
-            margin-top: 45px;
+            margin-top: 25px;
             margin-left: 0px;
-            margin-bottom: 45px;
+            margin-bottom: 25px;
 
+            .social{
+
+            }
             &:hover {
               background-color: $grey;
             }
