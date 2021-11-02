@@ -11,6 +11,7 @@ a:hover {
   }
 // Hide Menu when Not on Phone  
 .p-menu {
+  
   @media(min-width: 575px){
   display: none;
   }
@@ -25,8 +26,9 @@ a:hover {
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     z-index: 120;
+    position: fixed;
      div {
-      background-color: rgb(61, 61, 61);
+      background-color: $white;
       position: relative;
       width: 40px;
       height: 5px;
