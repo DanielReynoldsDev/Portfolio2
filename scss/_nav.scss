@@ -25,10 +25,10 @@ a:hover {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
-    z-index: 120;
+    z-index: 130;
     position: fixed;
      div {
-      background-color: $white;
+      background-color: $grey;
       position: relative;
       width: 40px;
       height: 5px;
@@ -46,22 +46,29 @@ a:hover {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     margin-top: 22.5px;
+    background-color: $white;
   }
   
   #toggle:checked + .hamburger .middle {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     margin-top: -5px;
+    background-color: $white;
   }
   
   #toggle:checked + .hamburger .bottom {
     -webkit-transform: scale(0);
             transform: scale(0);
+            background-color: $white;
   }
   
   #toggle:checked ~ .menu {
     height: 100%;
-
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 120;
   }
   
 
